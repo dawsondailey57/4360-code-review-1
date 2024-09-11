@@ -8,6 +8,8 @@ class Account:
         return self.balance
 
     def withdraw(self, amount):
+        if amount < 0:
+            raise ValueError("Withdraw amount must be a positive number")
         if self.balance >= amount:
             self.balance -= amount
             return self.balance
