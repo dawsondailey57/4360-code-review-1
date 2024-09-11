@@ -10,7 +10,6 @@ class UserInterface:
             message = key + " - " + val["description"]
             self.message.print(message)
             
-
     def register_command(self, command, callback, description=""):
         self.commands[command] = {
             "callback": callback,
