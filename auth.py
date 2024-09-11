@@ -23,6 +23,6 @@ class Auth:
                 else:
                     message.print("password not found")
             else:
-                message.print("name or password not found")
+                message.print("username not found")
             
         return None
