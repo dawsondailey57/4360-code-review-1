@@ -1,4 +1,4 @@
-class BankingExcpetion(Exception):
+class BankingException(Exception):
     pass
 
 class InsufficientFundsException(BankingExcpetion):
