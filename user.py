@@ -45,6 +45,8 @@ class User:
             return account.check_balance()
         except BankingException as e:
             message.display(e.message())
+        except ValueError as e:
+            message.display(f"Value Error: {e}")
         except:
             message.display("An error occurred")
 
