@@ -21,7 +21,7 @@ class Auth:
                         accounts[account['accountNumber']] = Account(account['balance'])
                     return User(user['name'], accounts)
                 else:
-                    message.print("name or password not found")
+                    message.print("password not found")
             else:
                 message.print("name or password not found")
             
